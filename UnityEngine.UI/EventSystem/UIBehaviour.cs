@@ -1,4 +1,4 @@
-namespace UnityEngine.Systems
+namespace UnityEngine.EventSystems
 {
     ///保护Unity生命周期功能实现的基本行为。
     public abstract class UIBehaviour : MonoBehaviour

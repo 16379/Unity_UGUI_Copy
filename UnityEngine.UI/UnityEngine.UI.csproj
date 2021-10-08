@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>7c84ea46-6d6a-4fec-83fa-2685eff9a85c</ProjectGuid>
+    <ProjectGuid>{7C84EA46-6D6A-4FEC-83FA-2685EFF9A85C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>UnityEngine.UI</RootNamespace>
@@ -31,24 +31,29 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System"/>
-    
-    <Reference Include="System.Core"/>
-    <Reference Include="System.Xml.Linq"/>
-    <Reference Include="System.Data.DataSetExtensions"/>
-    
-    
-    <Reference Include="Microsoft.CSharp"/>
-    
-    <Reference Include="System.Data"/>
-    
-    <Reference Include="System.Net.Http"/>
-    
-    <Reference Include="System.Xml"/>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="UnityEngine">
+      <HintPath>..\lib\UnityEngine.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="EventSystem\EventData\AxisEventData.cs" />
+    <Compile Include="EventSystem\EventData\BaseEventData.cs" />
+    <Compile Include="EventSystem\EventData\PointerEventData.cs" />
+    <Compile Include="EventSystem\EventHandle.cs" />
+    <Compile Include="EventSystem\EventInterfaces.cs" />
+    <Compile Include="EventSystem\EventSystem.cs" />
+    <Compile Include="EventSystem\ExecuteEvents.cs" />
+    <Compile Include="EventSystem\InputModules\BaseInput.cs" />
+    <Compile Include="EventSystem\InputModules\BaseInputModule.cs" />
+    <Compile Include="EventSystem\MoveDirection.cs" />
+    <Compile Include="EventSystem\RaycasterManager.cs" />
+    <Compile Include="EventSystem\Raycasters\BaseRaycaster.cs" />
+    <Compile Include="EventSystem\RaycastResult.cs" />
+    <Compile Include="EventSystem\UIBehaviour.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
- </Project>
+</Project>

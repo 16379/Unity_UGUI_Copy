@@ -30,10 +30,10 @@ namespace UnityEngine.EventSystems
         {
             m_EventSystem = eventSystem;
         }
-        public BaseInputModule currentInputModule
-        {
-            get { return m_EventSystem.currentInputModule; }
-        }
+        //public BaseInputModule currentInputModule
+        //{
+        //    get { return m_EventSystem.currentInputModule; }
+        //}
 
 
     }
